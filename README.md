@@ -1,1 +1,108 @@
-# bertin-gaming
+# bertin-gaming<!-- ACTUALITES BERTIN GAMING -->
+
+<section class="gaming-news">
+
+<h1>🔥 DERNIÈRES ACTUALITÉS GAMING</h1>
+
+<p>Bienvenue sur BERTIN GAMING !
+Découvrez les dernières nouvelles du monde des jeux vidéo.</p>
+
+<div class="news-container">
+
+<article class="news-card">
+<h2>🎮 GTA VI : Un lancement historique !</h2>
+<p>
+Rockstar Games annonce que GTA VI a généré
+3,79 milliards de dollars de ventes au détail
+durant ses premières 24 heures.
+Un lancement exceptionnel pour l'industrie du gaming !
+</p>
+<a href="https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records">
+Lire la suite
+</a>
+</article>
+
+<article class="news-card">
+<h2>🕹️ Xbox : Plus de 20 nouveaux jeux arrivent !</h2>
+<p>
+La semaine du 23 au 27 novembre réserve
+de nombreuses nouveautés aux joueurs Xbox.
+Plusieurs nouveaux titres sont attendus.
+</p>
+<a href="https://www.purexbox.com/news/2026/11/these-20plus-games-are-coming-to-xbox-next-week-november-23-27">
+Lire la suite
+</a>
+</article>
+
+<article class="news-card">
+<h2>⚔️ Gothic 3 Classic arrive sur consoles</h2>
+<p>
+Gothic 3 Classic est attendu le 24 novembre
+sur PlayStation 5 et Xbox Series X|S.
+Les amateurs de RPG pourront retrouver
+cet univers fantastique.
+</p>
+<a href="https://warppipes.com/en/articles/video-game-news-digest-2026-11-23">
+Lire la suite
+</a>
+</article>
+
+</div>
+</section>
+
+<style>
+
+.gaming-news {
+background: #121212;
+color: white;
+padding: 30px 15px;
+font-family: Arial, sans-serif;
+}
+
+.gaming-news h1 {
+color: #00e5ff;
+text-align: center;
+}
+
+.news-container {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 20px;
+margin-top: 25px;
+}
+
+.news-card {
+background: #222;
+padding: 20px;
+border-radius: 12px;
+border: 1px solid #00e5ff;
+}
+
+.news-card h2 {
+color: #00e5ff;
+font-size: 20px;
+}
+
+.news-card p {
+line-height: 1.6;
+}
+
+.news-card a {
+display: inline-block;
+background: #00e5ff;
+color: black;
+padding: 10px 15px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.news-card a:hover {
+background: #d500f9;
+color: white;
+}
+
+</style>
+
+<!-- FIN ACTUALITES -->
