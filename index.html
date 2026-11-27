@@ -3,104 +3,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BERTIN GAMING PREMIUM</title>
+<meta name="description" content="BERTIN GAMING NEWS : actualités gaming, jeux vidéo, astuces et nouveautés.">
+<title>BERTIN GAMING NEWS</title>
+
 <style>
-:root {
---bg:#090b16;
---panel:#171d35;
---cyan:#20e5ff;
---purple:#a855f7;
---text:#f4f6ff;
---muted:#aab2cc;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{box-sizing:border-box}
-body{
-margin:0;background:var(--bg);color:var(--text);
-font-family:Arial,sans-serif;line-height:1.6;
+
+body {
+  background: #080914;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
-.wrap{width:92%;max-width:1120px;margin:auto}
-header{
-background:#090b16;border-bottom:1px solid #28304d;
-padding:16px 0;
-position:sticky;top:0;z-index:5;
+
+header {
+  text-align: center;
+  padding: 15px;
+  background: #101226;
+  border-bottom: 2px solid #00e5ff;
 }
-.top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px}
-.brand{font-size:20px;font-weight:bold}
-.brand b{color:var(--cyan)}
-.brand span{color:var(--purple)}
-nav{display:flex;gap:15px;flex-wrap:wrap}
-nav a{color:var(--muted);text-decoration:none}
-nav a:hover{color:var(--cyan)}
-.hero{padding:65px 0 40px}
-.eyebrow{color:var(--cyan);font-weight:bold;letter-spacing:2px}
-h1{font-size:clamp(35px,7vw,65px);line-height:1.1}
-h1 em{color:var(--cyan);font-style:normal}
-.hero p{color:var(--muted);max-width:650px}
-.btn{
-display:inline-block;padding:12px 18px;border-radius:10px;
-background:linear-gradient(100deg,var(--cyan),#8c7bff);
-color:#080b17;font-weight:bold;text-decoration:none;
-margin:5px 0;
+
+header h1 {
+  font-size: 30px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00e5ff, #ff00cc, #ffe600);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.secondary{background:transparent;color:white;border:1px solid #28304d}
-.ticker{
-padding:14px;background:#102232;border:1px solid #24516a;
-border-radius:12px;margin:20px 0 35px;
+
+header p {
+  color: #ccc;
 }
-section{margin-bottom:45px}
-.section-head{margin-bottom:20px}
-.section-head h2{margin:0}
-.grid,.games,.plans{
-display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+
+.banner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 15px auto;
+  padding: 10px;
 }
-.card,.game,.plan{
-background:var(--panel);border:1px solid #28304d;
-border-radius:15px;overflow:hidden;padding:18px;
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #00e5ff;
 }
-.visual{
-height:100px;display:grid;place-items:center;
-font-size:45px;background:#20204a;margin:-18px -18px 15px;
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background: #15182b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.tag{color:var(--cyan);font-size:12px;font-weight:bold}
-.card h3,.game h3{margin:7px 0}
-.card p,.game p,.plan p{color:var(--muted);font-size:14px}
-.read{color:var(--cyan);display:inline-block;margin-top:10px;font-weight:bold}
-.tools{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
-.tools input{
-padding:12px;flex:1;min-width:180px;
-background:var(--panel);border:1px solid #28304d;
-border-radius:10px;color:white;
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: #252944;
 }
-.chip{
-padding:9px 13px;border-radius:25px;
-background:var(--panel);color:white;border:1px solid #28304d;
+
+nav a:hover {
+  background: #00bfff;
+  color: black;
 }
-.chip.active{border-color:var(--cyan);color:var(--cyan)}
-.notice{
-padding:17px;background:#17172a;border:1px dashed #6b5bb2;
-border-radius:12px;color:var(--muted);margin:20px 0;
+
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 25px auto;
 }
-.notice strong{color:#d9c8ff}
-.price{font-size:32px;font-weight:bold;margin:10px 0}
-.plan ul{color:var(--muted);padding-left:20px;min-height:120px}
-.featured{border-color:var(--cyan)}
-.plan .btn{width:100%;text-align:center}
-.contactbox{
-background:linear-gradient(120deg,#102b35,#21183d);
-border:1px solid #31536a;border-radius:15px;padding:22px;
+
+.section-title {
+  color: #00e5ff;
+  font-size: 25px;
+  margin-bottom: 18px;
+  border-left: 5px solid #ff00cc;
+  padding-left: 12px;
 }
-footer{padding:25px 0;border-top:1px solid #28304d;color:var(--muted)}
-.whatsapp{
-position:fixed;right:15px;bottom:15px;
-background:#20c96b;color:#062414;padding:13px 18px;
-border-radius:30px;font-weight:bold;text-decoration:none;
-z-index:10;
+
+.welcome {
+  background: linear-gradient(135deg, #171a35, #30104a);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
 }
-@media(max-width:760px){
-.grid,.games,.plans{grid-template-columns:1fr 1fr}
+
+.welcome h2 {
+  color: #ffe600;
+  font-size: 27px;
 }
-@media(max-width:480px){
-.grid,.games,.plans{grid-template-columns:1fr}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #15182b;
+  border: 1px solid #292e50;
+  border-radius: 13px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px #00e5ff55;
+}
+
+.card h3 {
+  color: #ffe600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c8ff, #8b2cff);
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.platform {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.premium {
+  background: linear-gradient(135deg, #251344, #111a39);
+  border: 2px solid #ffd700;
+}
+
+.premium h3 {
+  color: #ffd700;
+}
+
+.price {
+  font-size: 27px;
+  color: #00e5ff;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.subscribe {
+  background: #e60023;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.contact {
+  text-align: center;
+  background: #15182b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+footer {
+  background: #101226;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  border-top: 2px solid #00e5ff;
+  color: #aaa;
+}
+
+footer strong {
+  color: #00e5ff;
+}
+
+@media(max-width: 600px) {
+  header h1 {
+    font-size: 23px;
+  }
+
+  .section-title {
+    font-size: 21px;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
 }
 </style>
 </head>
@@ -108,263 +230,204 @@ z-index:10;
 <body>
 
 <header>
-<div class="wrap top">
-<a class="brand" href="#accueil">🎮 <b>BERTIN</b> <span>GAMING PREMIUM</span></a>
-<nav>
-<a href="#accueil">Accueil</a>
-<a href="#actualites">Actualités</a>
-<a href="#jeux">Jeux</a>
-<a href="#premium">Premium</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
+  <h1>BERTIN GAMING NEWS</h1>
+  <p>Votre univers gaming commence ici ! 🎮</p>
 </header>
 
-<main class="wrap">
-
-<section class="hero" id="accueil">
-<div class="eyebrow">LE RENDEZ-VOUS DES GAMERS</div>
-<h1>L'ACTUALITÉ GAMING<br><em>SANS INTOX.</em></h1>
-<p>Les nouveautés du jeu vidéo, les sorties, les mises à jour, les guides et les liens vers les boutiques officielles.</p>
-<a class="btn" href="#actualites">Voir les actualités</a>
-<a class="btn secondary" href="#premium">Découvrir Premium</a>
-</section>
-
-<div class="ticker">
-<strong>📢 Notre engagement :</strong>
-Les liens de téléchargement renvoient vers des sources officielles.
+<!-- GRANDE BANNIÈRE OFFICIELLE -->
+<div class="banner">
+  <img src="bgn-banniere.png"
+       alt="BERTIN GAMING NEWS - PlayStation, Xbox, PC et Android">
 </div>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#actualites">Actualités</a>
+  <a href="#jeux">Jeux</a>
+  <a href="#astuces">Astuces</a>
+  <a href="#premium">Premium</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main class="container">
+
+<section id="accueil" class="welcome">
+  <h2>BIENVENUE SUR BERTIN GAMING NEWS</h2>
+  <p>
+    Retrouvez les actualités du monde gaming, les nouveaux jeux,
+    les astuces, les sorties et les informations sur vos plateformes préférées.
+  </p>
+</section>
 
 <section id="actualites">
-<div class="section-head">
-<div class="eyebrow">À LA UNE</div>
-<h2>📰 Actualités gaming</h2>
-<p id="today"></p>
-</div>
+  <h2 class="section-title">🔥 ACTUALITÉS GAMING</h2>
 
-<div class="tools">
-<input id="search" type="search" placeholder="Rechercher une actualité...">
-<button class="chip active" data-filter="Tous">Tout</button>
-<button class="chip" data-filter="GTA">GTA</button>
-<button class="chip" data-filter="PlayStation">PlayStation</button>
-<button class="chip" data-filter="Mobile">Mobile</button>
-<button class="chip" data-filter="E-sport">E-sport</button>
-</div>
+  <div class="cards">
 
-<div class="grid" id="newsGrid">
+    <article class="card">
+      <div class="platform">🎮</div>
+      <h3>Actualités PlayStation</h3>
+      <p>Découvrez les annonces, nouveautés et informations officielles PlayStation.</p>
+      <a class="btn" href="https://blog.playstation.com/" target="_blank" rel="noopener">Lire les actualités</a>
+    </article>
 
-<article class="card" data-category="PlayStation">
-<div class="visual">🎮</div>
-<div class="tag">PLAYSTATION</div>
-<h3>Actualités PlayStation</h3>
-<p>Découvre les annonces et nouveautés PlayStation.</p>
-<a class="read" href="https://blog.playstation.com/" target="_blank">Lire les actualités ↗</a>
-</article>
+    <article class="card">
+      <div class="platform">🚗</div>
+      <h3>Actualités GTA</h3>
+      <p>Suivez les annonces et les nouveautés de Rockstar Games.</p>
+      <a class="btn" href="https://www.rockstargames.com/newswire" target="_blank" rel="noopener">Voir les annonces</a>
+    </article>
 
-<article class="card" data-category="GTA">
-<div class="visual">🚘</div>
-<div class="tag">GTA / ROCKSTAR</div>
-<h3>Nouveautés GTA</h3>
-<p>Retrouve les annonces officielles de Rockstar Games.</p>
-<a class="read" href="https://www.rockstargames.com/newswire" target="_blank">Lire les actualités ↗</a>
-</article>
+    <article class="card">
+      <div class="platform">⚽</div>
+      <h3>Actualités eFootball</h3>
+      <p>Retrouvez les informations et mises à jour officielles d'eFootball.</p>
+      <a class="btn" href="https://www.konami.com/efootball/" target="_blank" rel="noopener">En savoir plus</a>
+    </article>
 
-<article class="card" data-category="Mobile">
-<div class="visual">⚽</div>
-<div class="tag">EFOOTBALL</div>
-<h3>Actualités eFootball</h3>
-<p>Événements et mises à jour du jeu de football.</p>
-<a class="read" href="https://www.konami.com/efootball/" target="_blank">Site officiel ↗</a>
-</article>
+    <article class="card">
+      <div class="platform">🕹️</div>
+      <h3>Actualités Xbox</h3>
+      <p>Découvrez les nouveautés et annonces de l'univers Xbox.</p>
+      <a class="btn" href="https://news.xbox.com/" target="_blank" rel="noopener">Lire les nouvelles</a>
+    </article>
 
-<article class="card" data-category="Mobile">
-<div class="visual">📱</div>
-<div class="tag">JEUX MOBILES</div>
-<h3>Nouveautés Android</h3>
-<p>Découvre les jeux disponibles sur Android.</p>
-<a class="read" href="https://play.google.com/store/games" target="_blank">Google Play ↗</a>
-</article>
-
-<article class="card" data-category="E-sport">
-<div class="visual">🏆</div>
-<div class="tag">E-SPORT</div>
-<h3>Compétitions gaming</h3>
-<p>Actualités et compétitions e-sport.</p>
-<a class="read" href="https://www.esports.com/" target="_blank">Découvrir ↗</a>
-</article>
-
-<article class="card" data-category="PlayStation">
-<div class="visual">🟩</div>
-<div class="tag">XBOX</div>
-<h3>Actualités Xbox</h3>
-<p>Découvre les nouveautés Xbox.</p>
-<a class="read" href="https://news.xbox.com/" target="_blank">Xbox Wire ↗</a>
-</article>
-
-</div>
+  </div>
 </section>
 
-<section id="jeux">
-<div class="eyebrow">BIBLIOTHÈQUE</div>
-<h2>🎮 Jeux et téléchargements</h2>
+<section id="jeux" style="margin-top:40px;">
+  <h2 class="section-title">🎮 JEUX VIDÉO</h2>
 
-<div class="games">
+  <div class="cards">
 
-<div class="game">
-<div class="visual">🚗</div>
-<h3>GTA</h3>
-<p>Jeux et téléchargements officiels Rockstar.</p>
-<a class="read" href="https://www.rockstargames.com/games" target="_blank">Voir les jeux ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">🚘</div>
+      <h3>Grand Theft Auto</h3>
+      <p>Informations sur l'univers GTA et les jeux Rockstar.</p>
+      <a class="btn" href="https://www.rockstargames.com/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-<div class="game">
-<div class="visual">⚽</div>
-<h3>eFootball</h3>
-<p>Jeu de football Konami.</p>
-<a class="read" href="https://www.konami.com/efootball/" target="_blank">Télécharger / infos ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">⚽</div>
+      <h3>eFootball</h3>
+      <p>Découvrez le football virtuel et ses nouveautés.</p>
+      <a class="btn" href="https://www.konami.com/efootball/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-<div class="game">
-<div class="visual">🔫</div>
-<h3>Call of Duty</h3>
-<p>Jeux et informations officielles.</p>
-<a class="read" href="https://www.callofduty.com/" target="_blank">Site officiel ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">🔫</div>
+      <h3>Call of Duty</h3>
+      <p>Retrouvez les informations sur la célèbre série de jeux d'action.</p>
+      <a class="btn" href="https://www.callofduty.com/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-<div class="game">
-<div class="visual">🪖</div>
-<h3>PUBG Mobile</h3>
-<p>Informations et téléchargements officiels.</p>
-<a class="read" href="https://www.pubgmobile.com/" target="_blank">Site officiel ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">🔥</div>
+      <h3>Free Fire</h3>
+      <p>Actualités et informations sur Free Fire.</p>
+      <a class="btn" href="https://ff.garena.com/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-<div class="game">
-<div class="visual">🔥</div>
-<h3>Free Fire</h3>
-<p>Actualités et informations Garena.</p>
-<a class="read" href="https://ff.garena.com/" target="_blank">Site officiel ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">🎯</div>
+      <h3>PUBG Mobile</h3>
+      <p>Découvrez les nouveautés de PUBG Mobile.</p>
+      <a class="btn" href="https://www.pubgmobile.com/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-<div class="game">
-<div class="visual">🕹️</div>
-<h3>Jeux PC</h3>
-<p>Explore les jeux PC sur Steam.</p>
-<a class="read" href="https://store.steampowered.com/" target="_blank">Explorer Steam ↗</a>
-</div>
+    <article class="card">
+      <div class="platform">💻</div>
+      <h3>Steam</h3>
+      <p>Explorez les jeux disponibles sur PC.</p>
+      <a class="btn" href="https://store.steampowered.com/" target="_blank" rel="noopener">Découvrir</a>
+    </article>
 
-</div>
-
-<div class="notice">
-<strong>Important :</strong>
-Le site ne distribue pas de copies piratées. Certains jeux GTA ne sont pas disponibles sur Android.
-</div>
+  </div>
 </section>
 
-<section id="premium">
-<div class="eyebrow">MEMBRES</div>
-<h2>💎 BERTIN GAMING PREMIUM</h2>
+<section id="astuces" style="margin-top:40px;">
+  <h2 class="section-title">💡 ASTUCES GAMING</h2>
 
-<div class="plans">
+  <div class="cards">
+    <article class="card">
+      <h3>Conseils pour joueurs</h3>
+      <p>Des conseils pour mieux profiter de vos jeux préférés.</p>
+    </article>
 
-<div class="plan">
-<div class="tag">GRATUIT</div>
-<div class="price">0 $</div>
-<p>Pour découvrir BERTIN GAMING.</p>
-<ul>
-<li>Actualités publiques</li>
-<li>Liens des jeux</li>
-<li>Contact WhatsApp</li>
-</ul>
-<a class="btn secondary" href="#actualites">Continuer gratuitement</a>
-</div>
+    <article class="card">
+      <h3>Guides et tutoriels</h3>
+      <p>Des explications pour apprendre à utiliser vos jeux et plateformes.</p>
+    </article>
 
-<div class="plan featured">
-<div class="tag">LE PLUS POPULAIRE</div>
-<div class="price">2 $ / mois</div>
-<p>Accès Premium mensuel.</p>
-<ul>
-<li>Articles exclusifs</li>
-<li>Guides et astuces</li>
-<li>Analyses gaming</li>
-<li>Assistance Premium</li>
-</ul>
-<a class="btn" href="https://wa.me/243978000683?text=Bonjour%2C%20je%20souhaite%20m%27abonner%20au%20Premium%20mensuel%20BERTIN%20GAMING%20%C3%A0%202%20USD." target="_blank">Demander l'abonnement</a>
-</div>
-
-<div class="plan">
-<div class="tag">ÉCONOMIQUE</div>
-<div class="price">20 $ / an</div>
-<p>Un an d'accès Premium.</p>
-<ul>
-<li>Tous les avantages mensuels</li>
-<li>Accès pendant 12 mois</li>
-<li>Assistance WhatsApp</li>
-</ul>
-<a class="btn" href="https://wa.me/243978000683?text=Bonjour%2C%20je%20souhaite%20m%27abonner%20au%20Premium%20annuel%20BERTIN%20GAMING%20%C3%A0%2020%20USD." target="_blank">Demander l'abonnement</a>
-</div>
-
-</div>
-
-<div class="notice">
-<strong>État du paiement :</strong>
-Les paiements automatiques Airtel Money, Orange Money, M-Pesa, Visa et Mastercard ne sont pas encore connectés. Ils nécessitent un prestataire de paiement et un serveur sécurisé. Ne saisis jamais tes informations bancaires directement sur cette page.
-</div>
+    <article class="card">
+      <h3>Nouveautés et mises à jour</h3>
+      <p>Restez informé des changements dans le monde gaming.</p>
+    </article>
+  </div>
 </section>
 
-<section id="contact">
-<div class="contactbox">
-<div class="eyebrow">BESOIN D'AIDE ?</div>
-<h2>Contacte l'administrateur</h2>
-<p>Une question sur les actualités, les jeux ou Premium ?</p>
-<a class="btn" href="https://wa.me/243978000683" target="_blank">Contacter sur WhatsApp ↗</a>
-</div>
+<section id="premium" style="margin-top:40px;">
+  <h2 class="section-title">👑 ESPACE PREMIUM</h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <h3>Gratuit</h3>
+      <div class="price">0 $</div>
+      <p>Accès aux actualités publiques du site.</p>
+    </article>
+
+    <article class="card premium">
+      <h3>Premium mensuel</h3>
+      <div class="price">2 $ / mois</div>
+      <p>Demandez votre abonnement Premium par WhatsApp.</p>
+      <a class="subscribe" href="https://wa.me/243978000683?text=Bonjour%2C%20je%20souhaite%20m%27abonner%20au%20Premium%20mensuel%20de%20Bertin%20Gaming%20News.">
+        S'ABONNER
+      </a>
+    </article>
+
+    <article class="card premium">
+      <h3>Premium annuel</h3>
+      <div class="price">20 $ / an</div>
+      <p>Demandez votre abonnement annuel par WhatsApp.</p>
+      <a class="subscribe" href="https://wa.me/243978000683?text=Bonjour%2C%20je%20souhaite%20m%27abonner%20au%20Premium%20annuel%20de%20Bertin%20Gaming%20News.">
+        S'ABONNER
+      </a>
+    </article>
+
+  </div>
+
+  <p style="color:#ccc; margin-top:18px;">
+    Pour le moment, les abonnements sont organisés manuellement par WhatsApp.
+    Les paiements automatiques Airtel Money, Orange Money et M-Pesa ne sont
+    pas encore connectés.
+  </p>
 </section>
 
-<section class="notice">
-<strong>À propos de BERTIN GAMING</strong><br>
-Un projet indépendant consacré à l'actualité du jeu vidéo en Afrique et dans le monde.
+<section id="contact" style="margin-top:40px;">
+  <h2 class="section-title">📞 CONTACT</h2>
+
+  <div class="contact">
+    <h3>BERTIN GAMING NEWS</h3>
+    <p>Une question ou une demande ? Contactez-nous.</p>
+    <a class="subscribe" href="https://wa.me/243978000683" target="_blank" rel="noopener">
+      NOUS CONTACTER SUR WHATSAPP
+    </a>
+  </div>
 </section>
 
 </main>
 
 <footer>
-<div class="wrap">
-© <span id="year"></span> BERTIN GAMING PREMIUM
-</div>
+  <p><strong>BERTIN GAMING NEWS</strong></p>
+  <p>Actualités • Jeux • Astuces • Actus</p>
+  <p>© <span id="year"></span> Bertin Gaming News. Tous droits réservés.</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/243978000683" target="_blank">🟢 WhatsApp</a>
-
 <script>
-const now=new Date();
-document.getElementById('today').textContent=
-now.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-document.getElementById('year').textContent=now.getFullYear();
-
-let category='Tous';
-const search=document.getElementById('search');
-const cards=[...document.querySelectorAll('#newsGrid .card')];
-
-function filter(){
-const q=search.value.toLocaleLowerCase('fr');
-cards.forEach(card=>{
-const matchCat=category==='Tous'||card.dataset.category===category;
-const matchText=card.textContent.toLocaleLowerCase('fr').includes(q);
-card.style.display=matchCat&&matchText?'':'none';
-});
-}
-
-document.querySelectorAll('[data-filter]').forEach(btn=>{
-btn.addEventListener('click',()=>{
-document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));
-btn.classList.add('active');
-category=btn.dataset.filter;
-filter();
-});
-});
-
-search.addEventListener('input',filter);
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
 
 </body>
-</html>
+  </html>
